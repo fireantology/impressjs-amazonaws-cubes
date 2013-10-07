@@ -1,0 +1,183 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+body {
+    font-smooth: always;
+    font-family: 'Open Sans', sans-serif;
+    min-height: 740px;
+    background: white;
+}
+
+b, strong { font-weight: bold }
+i, em { font-style: italic}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+
+/* enable clicking on elements 'hiding' behind body in 3D */
+body     { pointer-events: none; }
+#impress { pointer-events: auto; }
+
+/* COMMON STEP STYLES */
+
+.step {
+    width: 900px;
+    padding: 40px;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:    border-box;
+    -ms-box-sizing:     border-box;
+    -o-box-sizing:      border-box;
+    box-sizing:         border-box;
+
+    font-size: 50px;
+    line-height: 1.2;
+}
+
+.step {
+    -webkit-transition: opacity 1s;
+    -moz-transition:    opacity 1s;
+    -ms-transition:     opacity 1s;
+    -o-transition:      opacity 1s;
+    transition:         opacity 1s;
+}
+
+/* CUBE */
+.cube {
+}
+
+.cube h1 {
+    font-weight:bold;
+    border-bottom:3px solid black;
+    font-size:70px;
+    margin-bottom:30px;
+}
+
+.cubeFace {
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(252,197,89)), to(rgb(247,168,13)));
+    background: radial-gradient(circle, rgb(252,197,89), rgb(247,168,13));
+    box-shadow: inset 0px 0px 20px 5px rgb(195,129,0);
+    width: 700px;
+    height: 700px;
+}
+
+/* FADE EFFECTS */
+.past .real-fade, .future .real-fade {
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.present .real-fade {
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+}
+
+/* AMAZON TEXT */
+.amazontm{
+    line-height: 0.8;
+    font-weight: bold;
+    font-size: 1.6em;
+    font-family: 'Pontano Sans', helvetica, sans-serif;
+}
+
+.amazonwb{
+    line-height: 1.0;
+    font-family: 'Pontano Sans', helvetica, sans-serif;
+}
+
+
+/* CUSTOM STYLES */
+h1 {
+    font-weight:bold;
+    font-family: 'Expletus Sans', cursive;
+    font-size:1.2em;
+    padding-bottom: 10px;
+}
+
+.slide, .slide-auto {
+    display: block;
+
+    width: 700px;
+    height: 350px;
+    padding: 40px 60px;
+
+    background-color: rgba(255,255,255,0.7);
+    border: 1px solid rgba(0, 0, 0, .3);
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
+
+    color: rgb(102, 102, 102);
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+}
+
+.slide-auto {
+    background-color: rgba(255,255,255,0.9);
+    height: auto;
+    width: auto;
+    text-align: center;
+}
+
+.white {
+    color: white;
+}
+
+.shadow {
+    text-shadow: -1px -1px 1px rgba(0, 0, 0,0.5);
+}
